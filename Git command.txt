@@ -1,0 +1,63 @@
+﻿Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+git init         ---> 	pour initialiser notre projet
+git add .        ---> 	pour ajouter tous les fichiers à notre projet git
+git status       ---> 	permet de voir les fichier presents ou non dans le projet git
+git rm           ---> 	permet de supprimer des fichiers de projet git (git rm --cached nom-de-fichier)  
+git checkout-- . ---> 	permet de faire un retour en arrière (Ex : genre récupérer des fichiers supprimés)
+git commit       ---> 	permet de faire des changements et les écrire 
+                      	(pour écrire on tape la lettre i, après pour sauvegrader on tape echape, puis :wq!) wich means writequit
+		      	pour éviter à chaque fois de taper i et compagnie pour modifier et sauvegarder, on peut utiliser la commande ci-après)
+
+			git commit -m 'et on met etre guillemets le nom de changement'
+
+git push -u origin master ---> quand on veut envoyer un changement, le uploader sur le repository 
+				
+			      {
+				-u : permet de créer un tracker de la branche master,			
+				master : est le nom de la branche principal lors de premier upload sur le repo,
+				parcontre si on souhaite rajouter une nouvelle branche à notre repo on tapera une commande similaire
+				avec le nom_de_branche à la place de master
+				si le changement ne concerne pas une branche bien spécifique on a qu'a taper git push	}
+
+git pull	--->	dans le cas où plusieurs developpeurs travaille sur une même appli et tous effectuent des changement,
+			pour récupérer les changements des autres on utilise :
+
+git clone 	--->	permet de Copier et Cloner un repository dans un nouveau répertoire (ex : git clone ~/Desktop/GIT ~/Desktop/ColneGIT)
+
+la branch develop : 	contient les dernières modifications de notre code et donc une version plus avncée que celle de la branch master, 
+
+			dès que cette partie de code est prête et stable on pourra l'envoyer dans la branche master en la tagant 
+			
+			(merge dans master) avec une (release 0.1.0 | 1.2.1...)
+
+
+les branches supports ont une durée limitée; une fois qu'ils sont fusionné avec la branche develop ou master on pourra les supprimer
+
+
+la branche feature : 	par exemple ne doit exister que quand on crée ou developpe une nouvelle fonctionalité 
+
+			(au début on récupère le code de la branch develop, on travaille dessus et une fois termine 
+			
+			on le merge et fusionne à la branche develop ) 
+
+
+la branche release : 	cette banche ext créée pour préparer l'arrivé d'une nouvelle release et c'est presque le même principe que pour 
+
+			la branche feature sauf qu'ici au début on récupère le code de la branch develop, on travaille dessus et une fois termine 
+			
+			on le merge et fusionne à la branche develop et master à la fois et prend comme nom (release-*, avec * = version de projet)
+
+
+la branche hotfix :	cette branche permet de résoudre des bugs critiques qui doivent être résolu en urgence, encore une fois 
+
+			les règles de cette branche sont similaire aux branches précédentes, sauf que le code est récupéré depuis
+	
+			la branche master, le codé développé dans cette partie imerge dans les deux branches master et develop 
+
+			le code prend comme nom : hotfix-*
+	 

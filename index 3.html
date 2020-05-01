@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Ceci est mon premier pas en GIT
+        </title>
+
+    </head>
+    
+    <body>
+
+        <!-- Ceci est un commentaire -->
+        <!-- 
+            la balise orpheline <br>                        permet de faire des sauts de ligne dans un paraghraphe
+            la balise orpheline <wbr>                       permet de découper des paragraphes ou des url trop long
+            la balise orpheline <hr>                        permet d'afficher des séparateurs
+            la balise fermante  <strong></strong>           permet de mettre un text important en évidence, l'affichage ici est en gras                          <==>  <b></b>
+            la balise fermante  <em></em>                   permet de mettre un text important en évidence, l'affichage ici est en italic                        <==>  <i></i>
+            la balise fermante  <del></del>                 permet de spécifier qu'un text n'est plus utile et va être supprimer par la suite, le text est barré <==>  <s></s>
+            la balise fermante  <ins></ins>                 permet de rajouter  un text souligné
+            la balise fermante  <mark></mark>               permet de mettre en évidence un text en le colorant 
+            la balise fermante  <q></q>                     permet d'inclure une citation courte depuis une source externe et les mettre entre guillemet
+            la balise fermante  <a></a>                     permet d'afficher un lien internet dans la page web 
+            la balise fermante  <cite></cite>               permet d'afficher un nom de document, film etc en italic
+            la balise fermante  <blockquote></blockquote>   permet de mettre une longue citation en évidence
+            la balise fermante  <details></details>         permet de ne pas afficher un text à tout le monde par défaut
+            la balise fermante  <abbr></abbr>               permet d'afficher la signification d'une abbréviation en utilisant l'option title
+            la balise fermante  <bdi></bdi>                 permet de détecter le sens d'écriteur d'un mot
+            la balise fermante  <code></code>               permet d'afficher de code (programmation)
+            la balise fermante  <meter></meter>             permet d'afficher une barre de pourcentage
+            la balise fermante  <pre></pre>                 permet d'écrire de text préformaté
+            la balise fermante  <output></output>           permet d'afficher des résultats
+            la balise fermante  <kbd></kbd>                 permet d'afficher des raccourcis de clavier
+            la balise fermante  <samp></samp>               permet d'afficher le resultat d'un code (sortie d'un programme)
+            #------------------------------------------------------------------------------------------------------------------------------------------------#
+            la balise fermante  <u></u>                      permet d'introduire des liste (revoie une liste de puces)
+            la balise fermante  <ol></ol>                    permet d'introduire des liste ordonnées, à utiliser à la place de <u> (revoie une liste numérotée)
+            la balise fermante  <li></li>                    permet d'introduire les éléments d'une liste, elle est çà utiliser dans a balise <u>
+            la balise fermante  <table></table>              permet de créer un tableau
+            la balise fermante  <caption></caption>          permet de donner un titre au tableau crée
+            la balise fermante  <thead></thead>              permet de créer les entêtes de tableau <==> <th></th>
+            la balise fermante  <tbody></tbody>              permet de créer le corps de tableau
+            la balise fermante  <tfoot></tfoot>              permet de créer le bas de tableau
+            #------------------------------------------------------------------------------------------------------------------------------------------------#
+            la balise fermante  <input>                      permet de donner la main à l'utilisateur pour introduire un élément de formulaire
+            la balise fermante  <label></label>              permet d'activer la saisi sans utiliser la souris (l'utilisation des attributs for et id est essentiel)
+            la balise fermante  <fieldset></fieldset>        permet de regrouper un ensemble d'information dans un cadre
+            la balise fermante  <textarea></textarea>        permet de rajouter des espaces pour écrire et mettre de commentaire
+            
+            les balises fermantes <select></select> et <option></option> permettent ensemble de créer un menu ou une liste de choix déroulant
+                
+
+            #------------------------------------------------------------------------------------------------------------------------------------------------#
+            Options :
+            target de <a>                               permet d'afficher la page web de lien introduit dans une autre onglet
+            href="mailto:lavoixlactee007@gmail.com">    permet d'envoyer un mail à la personne en question 
+            reversed pour la balise <ol>                permet d'inverser l'ordre d'une liste 
+            start pour la balise <ol>                   permet de préciser à partir de quel numéro on commence la liste
+            type pour la balise <ol>                    permet de choisir le type de numérotation de la liste (alphabétique, chiffre normal ou romain, ...)
+            autocomplete pour la balise <form>          permet d'activer ou non l'autocompletion ou non d'une formulaire
+            method pour la balise <form>                permet de spécifier la façon dont les données de formulaire sont envoyé
+            action pour la balise <form>                permet de renseigner le fichier de résultats de l'envoie de formulaire
+            name pour la balise <form>                  permet de donner un nom au formulaire
+            enctype pour la balise <form>               permet de spécifier un type mime qui va définir l'identité d'un type de fichier (ex : pdf, ppt, doc, ..) 
+            placeholder pour la balise <input>          permet d'aider l'utilisateur à renseigner le paramètre demandé
+            type pour la balise <input>                 permet de spécifier le type de l'élément de formulaire
+            disabled pour la balise <form>              permet désactiver la saisi de quelque informations
+            legend pour la balise <fieldset>            permet de donner un titre au cadre en question
+
+
+            dans une section de balise par exemple <body>, on ne peut avoir q'un seul <h1>
+            placeholder et email ont le même rôle sauf que le text affiché par placeholder est en arrière plan et disparaîtra une fois on commence la saisi
+            par contre le text affiché par value doit être effacé avant de commencer a saisi
+            
+        -->
+        <p> Ceci est juste une simple modification pour tester le git </p>
+        <p>
+            <form method="post" id="formu" action="" name="nom-de-formulaire" target="_blank" autocomplete="on">
+                
+                <fieldset form="formu" > <!-- disabled -->
+
+                    <legend> Section Informations Personnelles </legend>
+                    Nom : <input name="username" placeholder="Entrez votre nom ici"  pattern="[A-Za-z]+"> <br><br> 
+                    <label for="P"> Prénom : <input id="P" name="pseudoname" placeholder="Entrez votre prénom ici" type="text"> </label>  <br><br> 
+                    sexe : Masculin <input name="gendre" type="checkbox">  féminin <input name="gendre" type="checkbox"> <br><br> 
+                    email : <input name="mail" type="email" value="Entrez votre email ici" > <br><br>
+                    Tel : <input name="Tel" type="tel" placeholder="Entrez votre num ici" required > <br><br>
+
+                </fieldset>
+                <br><br>                 
+                
+                <fieldset form="formu">  
+
+                    date : <input name="date" type="date" > <br><br>
+                    date et heure local : <input name="date&time" type="datetime-local" > <br><br>
+                    choix de couleur : <input name="color" type="color" value="#ff0000"> <br><br> <!-- Code pour la couleur rouge value="#ff0000" -->
+                    Nombre d'articles commandés : <input name="nombre" type="number" min="0" max="10" step="1" value="0"> <br><br>
+                    <!-- Quand on veux que le choix soit obligatoire, ça veut dire l'utilisateur devra choisir au moins une valeur on utilise les balises ci-après-->
+                    paiement par : Carte bancaire <input name="payment" type="radio" value="">  paypal <input name="payment" type="radio" > <br><br> 
+
+                </fieldset>
+                <br><br>
+                <textarea></textarea>
+                <fieldset form="formu" > 
+
+                    <legend> Ajouter un commentaire </legend>
+                    <textarea name="zone-commentaire" rows="5" cols="50" placeholder="veuillez laisser un commentaire svp" minlength="10" maxlength="200" ></textarea>
+                
+                </fieldset>
+                <br><br> 
+                
+                <fieldset form="formu" > 
+
+                    <legend> Candidature </legend>
+
+                    Choix de spécialité :
+                    <select>
+
+                        <option> Mécanique et éanergétique </option>
+                        <option> Génie civil </option>
+                        <option> Informatique </option>
+                        
+                    </select> <br><br> 
+                    
+                    Choix de l'université
+                    <select>
+                        
+                        <option> Université de Lorraine </option>
+                        <option> Université de Toulouse 3 </option>
+                        <option> Université de Lyon 1 </option>
+
+                    </select> <br><br> 
+
+                    Choix de niveau
+                    <select size="2">
+                        
+                        <option> BAC + 3 </option>
+                        <option> BAC + 4 </option>
+                        <option> BAC + 5 </option>
+
+                    </select> <br><br> 
+
+                    <select name="choix de l'option" multiple> <!-- l'option multiple permet d'afficher plusieurs choix à la foix, à revoir son utilisation -->
+                        
+                        <optgroup label="Développement">
+                            <option> développement des applications WEB     </option>
+                            <option> développement des applications Android </option>
+                            <option> développement des applications IOS </option>
+                        </optgroup>
+
+                        <optgroup label="Réseau">
+                            <option> Administration système et réseau </option>
+                            <option> Sécurité réseau </option>
+                            <option> Cybersécurité   </option>
+                            <option disabled> Cloud Computing </option> <!-- l'option disabled permet de désactiver le choix de cette option -->
+                        </optgroup>
+
+                        <optgroup label="New technologies">
+                            <option> Big data & data analyst      </option>
+                            <option> Internet of things (IoT)     </option>
+                            <option> Artificial Intelligence (AI) </option>
+                        </optgroup>
+                    </select> <br><br> 
+                    
+                    <!-- la list créée ci-dessous est très intéressante, 
+                         elle permet de chercher un choix en tapant sa première lettre de renseigner un choix non existant-->
+
+                    Choix des technos et langages de programmation : <input list="CT&LP">
+                    <datalist id="CT&LP">
+
+                        <option> JAVA & JAVASCRIPT 
+                        <option> Python 
+                        <option> Node JS / Angular JS / React JS / Vue JS 
+                        <option> Spring / Bootstrap 
+
+                    </datalist>
+                    
+                </fieldset> <br><br>                
+
+                <button> Cliquez ici</button> <br><br>
+
+                Volume ou niveau : <input name="niveau" type="range" min="0" max="100" step="5"> <br><br>
+                Mot de passe : <input name="MDP" placeholder="Entrez votre mot de passe ici" type="password" required> <br><br>
+                validation de formulaire : <input name="validation" type="submit" value="Envoyer"> <br><br>
+                réinitialisation de formulaire : <input name="réinitialisation" type="reset" value="réinitialiser"> <br><br>
+
+
+            </form>        
+
+        </p>
+   
+    </body>
+
+</html>
+
+
